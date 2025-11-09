@@ -1,0 +1,58 @@
+/* ===== GENERAL ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ECF8F6;
+    color: #18534F;
+    scroll-behavior: smooth;
+  }
+  
+  /* ===== NAVBAR ===== */
+  .navbar {
+    background-color: #18534F;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .navbar-brand {
+    color: #FEEAA1 !important;
+    font-weight: 700;
+  }
+  
+  .nav-link {
+    color: #ECF8F6 !important;
+    margin-left: 1rem;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .nav-link:hover, .nav-link.active {
+    color: #FEEAA1 !important;
+  }
+  
+  /* ===== HERO SECTION ===== */
+  .hero {
+    height: 100vh;
+    background: linear-gradient(to right, #18534F, #226D68);
+    color: #ECF8F6;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .highlight {
+    color: #FEEAA1;
+  }
+  
+  .btn-custom {
+    background-color: #D6955B;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 25px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-custom:hover {
+    background-color: #FEEAA1;
+    color: #18534F;
+  }
+  

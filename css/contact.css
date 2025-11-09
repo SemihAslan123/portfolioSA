@@ -1,0 +1,64 @@
+/* ===== CONTACT PAGE ===== */
+.contact-section {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ECF8F6 60%, #FEEAA1 100%);
+    padding-top: 120px;
+    color: #18534F;
+  }
+  
+  .contact-section h2 {
+    color: #18534F;
+  }
+  
+  .contact-form {
+    background-color: #ffffffcc;
+    border: 2px solid #D6955B33;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 20px rgba(24, 83, 79, 0.1);
+  }
+  
+  .form-label {
+    font-weight: 500;
+    color: #226D68;
+  }
+  
+  .form-control {
+    border-radius: 10px;
+    border: 1.5px solid #D6955B55;
+    padding: 10px 15px;
+  }
+  
+  .form-control:focus {
+    border-color: #226D68;
+    box-shadow: 0 0 5px rgba(34, 109, 104, 0.3);
+  }
+  
+  /* ===== BUTTON ===== */
+  .btn-custom {
+    background-color: #D6955B;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 25px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-custom:hover {
+    background-color: #226D68;
+    color: #ECF8F6;
+  }
+  
+  /* ===== SOCIAL LINKS ===== */
+  .social-links a {
+    color: #18534F;
+    font-size: 1.8rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-links a:hover {
+    color: #D6955B;
+  }
+  
