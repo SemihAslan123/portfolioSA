@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projets – Semih Aslan</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/projects.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
@@ -12,7 +13,6 @@
 </head>
 <body>
 
-    <!-- ======== NAVBAR ======== -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">Semih Aslan</a>
@@ -23,6 +23,8 @@
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="competences.html">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="formation.html">Formation</a></li>
           <li class="nav-item"><a class="nav-link active" href="projects.html">Projets</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
@@ -37,98 +39,282 @@
     </div>
   </section>
 
-  <!-- ======== PROJECTS GRID ======== -->
   <section class="projects-section py-5">
     <div class="container">
       <div class="row g-4">
 
         <div class="col-md-6 col-lg-4">
-          <div class="project-card shadow-sm text-center p-4">
-            <div class="project-icons mb-3">
-              <i class="devicon-html5-plain colored"></i>
-              <i class="devicon-css3-plain colored"></i>
-              <i class="devicon-javascript-plain colored"></i>
-              <i class="devicon-nodejs-plain colored"></i>
-              <i class="devicon-vuejs-plain colored"></i>
-              <i class="devicon-postgresql-plain colored"></i>
+          <div class="project-card shadow-sm text-center p-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+                <div class="project-icons mb-3">
+                <i class="devicon-nodejs-plain colored"></i>
+                <i class="devicon-postgresql-plain colored"></i>
+                <i class="devicon-vuejs-plain colored"></i>
+                </div>
+                <h5 class="fw-bold">QuanticGP</h5>
+                <p>Interface de gestion de prestataires pour le Grand Prix de Monaco.</p>
             </div>
-            <h5 class="fw-bold">QuanticGP - Dashboard Prestataires</h5>
-            <p>Interface web Express.js / PostgreSQL pour la gestion des prestataires pour une plateforme événementielle pour le Grand Prix de Monaco, permettant la réservation de stands pour les prestataires.</p>
-            <a href="https://github.com/SemihAslan123/QuanticGP" target="_blank" class="btn btn-outline-custom mt-2">Voir plus</a>
+            <div class="mt-3">
+                <button class="btn btn-outline-custom w-100 mb-2" data-bs-toggle="modal" data-bs-target="#modalQuantic">Voir détails</button>
+                <a href="https://github.com/SemihAslan123/QuanticGP" target="_blank" class="btn btn-sm btn-dark w-100"><i class="bi bi-github me-1"></i>Repo GitHub</a>
+            </div>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4">
-          <div class="project-card shadow-sm text-center p-4">
-            <div class="project-icons mb-3">
-              <i class="devicon-swift-plain colored"></i>
+          <div class="project-card shadow-sm text-center p-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+                <div class="project-icons mb-3">
+                <i class="devicon-swift-plain colored"></i>
+                </div>
+                <h5 class="fw-bold">ScreenSerenity</h5>
+                <p>Application iOS de bien-être numérique et gestion du temps d'écran.</p>
             </div>
-            <h5 class="fw-bold">ScreenSerenity</h5>
-            <p>Application iOS de gestion du temps d’écran avec statistiques et restrictions.</p>
-            <a href="#" class="btn btn-outline-custom mt-2">Voir plus</a>
+            <div class="mt-3">
+                <button class="btn btn-outline-custom w-100 mb-2" data-bs-toggle="modal" data-bs-target="#modalScreen">Voir détails</button>
+                <a href="#" class="btn btn-sm btn-dark w-100 disabled"><i class="bi bi-github me-1"></i>Repo Privé</a>
+            </div>
           </div>
         </div>
     
         <div class="col-md-6 col-lg-4">
-          <div class="project-card shadow-sm text-center p-4">
-            <div class="project-icons mb-3">
-              <i class="devicon-java-plain colored"></i>
+          <div class="project-card shadow-sm text-center p-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+                <div class="project-icons mb-3">
+                <i class="devicon-java-plain colored"></i>
+                </div>
+                <h5 class="fw-bold">4Mation</h5>
+                <p>Jeu de plateau stratégique développé en Java (Architecture MVC).</p>
             </div>
-            <h5 class="fw-bold">4Mation</h5>
-            <p>Jeu de plateau développé en Java (MVC) offrant une expérience de jeu structurée et interactive.</p>
-            <a href="https://github.com/Natan90/sae126" target="_blank" class="btn btn-outline-custom mt-2">Voir plus</a>
+            <div class="mt-3">
+                <button class="btn btn-outline-custom w-100 mb-2" data-bs-toggle="modal" data-bs-target="#modal4mation">Voir détails</button>
+                <a href="https://github.com/Natan90/sae126" target="_blank" class="btn btn-sm btn-dark w-100"><i class="bi bi-github me-1"></i>Repo GitHub</a>
+            </div>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4">
-          <div class="project-card shadow-sm text-center p-4">
-            <div class="project-icons mb-3">
-              <i class="devicon-html5-plain colored"></i>
-              <i class="devicon-css3-plain colored"></i>
-              <i class="devicon-javascript-plain colored"></i>
-              <i class="devicon-bootstrap-plain colored"></i>
+          <div class="project-card shadow-sm text-center p-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+                <div class="project-icons mb-3">
+                <i class="devicon-bootstrap-plain colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                </div>
+                <h5 class="fw-bold">NFT Universe</h5>
+                <p>Boutique en ligne responsive pour l'achat et la gestion de NFT.</p>
             </div>
-            <h5 class="fw-bold">NFT Universe</h5>
-            <p>Boutique en ligne développée avec Bootstrap, permettant l’achat et la gestion de NFT.</p>
-            <a href="https://github.com/Estebanbrrr/NFT_Universe" target="_blank" class="btn btn-outline-custom mt-2">Voir plus</a>
+            <div class="mt-3">
+                <button class="btn btn-outline-custom w-100 mb-2" data-bs-toggle="modal" data-bs-target="#modalNft">Voir détails</button>
+                <a href="https://github.com/Estebanbrrr/NFT_Universe" target="_blank" class="btn btn-sm btn-dark w-100"><i class="bi bi-github me-1"></i>Repo GitHub</a>
+            </div>
           </div>
         </div>
 
-        <a href="https://github.com/SemihAslan123" class="btn btn-custom mt-4">Voir plus de projets</a>
       </div>
+       <div class="text-center mt-5">
+         <a href="https://github.com/SemihAslan123" class="btn btn-custom">Voir tous mes projets sur GitHub</a>
+       </div>
     </div>
   </section>
 
-  <!-- ======== EXPERIENCES ======== -->
   <section class="experiences-section py-5">
     <div class="container">
       <h2 class="text-center fw-bold mb-5">Expériences professionnelles</h2>
 
       <div class="timeline">
-        <!-- Expérience 1 -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content shadow-sm">
             <h5 class="fw-bold">Stage Développeur Web – Médiamag Distribution</h5>
             <p class="text-muted mb-2"><i class="bi bi-calendar-event"></i> Avril - Juin 2025</p>
-            <p>Réalisation d’un projet complet : conception, développement et mise en ligne d’une application web. 
-              Expérience axée sur la gestion du backend principalement (Java Play, Ebean ORM) et la réalisations d’interfaces modernes.</p>
+            <p>Conception et développement d'une application web complète.</p>
+            <button class="btn btn-sm btn-outline-custom" data-bs-toggle="modal" data-bs-target="#modalExp1">En savoir plus</button>
           </div>
         </div>
 
-        <!-- Expérience 2 -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content shadow-sm">
             <h5 class="fw-bold">Employé Polyvalent – Lidl</h5>
             <p class="text-muted mb-2"><i class="bi bi-calendar-event"></i> Novembre 2024 - Juillet 2025</p>
-            <p>Poste étudiant en CDI : gestion de la caisse, mise en rayon et travail d’équipe.
-              Développement de compétences clés telles que la rigueur, la réactivité et le sens des responsabilités.</p>
+            <p>Job étudiant - Développement des soft skills.</p>
+            <button class="btn btn-sm btn-outline-custom" data-bs-toggle="modal" data-bs-target="#modalExp2">En savoir plus</button>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+
+  <div class="modal fade" id="modalQuantic" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">QuanticGP - Dashboard Prestataires</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Objectif :</strong> Digitaliser la gestion des prestataires pour le Grand Prix de Monaco, facilitant la réservation et l'attribution des stands.</p>
+          
+          <h6>Technologies :</h6>
+          <ul>
+            <li>Express.js (Backend)</li>
+            <li>PostgreSQL (Base de données)</li>
+            <li>Vue.js (Frontend)</li>
+          </ul>
+
+          <h6>Fonctionnalités principales :</h6>
+          <ul>
+            <li>Authentification sécurisée des prestataires et administrateurs.</li>
+            <li>Tableau de bord interactif pour visualiser les stands disponibles.</li>
+            <li>CRUD complet sur les réservations.</li>
+          </ul>
+
+          <h6>Défis & Solutions :</h6>
+          <p>La gestion de la concurrence d'accès sur les réservations a nécessité une gestion fine des transactions SQL pour éviter les conflits.</p>
+        </div>
+        <div class="modal-footer">
+           <a href="https://github.com/SemihAslan123/QuanticGP" target="_blank" class="btn btn-dark">Voir le code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalScreen" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">ScreenSerenity (iOS)</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Objectif :</strong> Aider les utilisateurs à réduire leur addiction au smartphone via des statistiques claires et des outils de restriction douce.</p>
+          
+          <h6>Technologies :</h6>
+          <ul>
+            <li>Swift / SwiftUI</li>
+            <li>ScreenTime API (Apple)</li>
+            <li>CoreData</li>
+          </ul>
+
+          <h6>Fonctionnalités :</h6>
+          <ul>
+            <li>Visualisation graphique du temps d'écran quotidien/hebdomadaire.</li>
+            <li>Définition d'objectifs de déconnexion.</li>
+            <li>Notifications d'encouragement.</li>
+          </ul>
+
+          <h6>Évolutions possibles :</h6>
+          <p>Ajout d'un mode "Focus" gamifié pour récompenser les périodes sans écran.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal4mation" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">4Mation - Jeu de Stratégie</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Objectif :</strong> Développer un jeu de plateau complet en respectant strictement le pattern MVC (Modèle-Vue-Contrôleur) en Java.</p>
+          
+          <h6>Technologies :</h6>
+          <ul>
+            <li>Java (Swing pour l'interface graphique)</li>
+            <li>Junit (Tests unitaires)</li>
+          </ul>
+
+          <h6>Mon rôle :</h6>
+          <p>Développeur principal sur la logique "Modèle" (règles du jeu, gestion de la grille) et intégration des contrôleurs.</p>
+
+          <h6>Défis :</h6>
+          <p>Séparer proprement l'affichage de la logique métier a été le défi majeur, résolu par l'utilisation d'observateurs (Observer Pattern).</p>
+        </div>
+        <div class="modal-footer">
+           <a href="https://github.com/Natan90/sae126" target="_blank" class="btn btn-dark">Voir le code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalNft" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">NFT Universe</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Objectif :</strong> Créer une vitrine e-commerce moderne pour une collection fictive de NFT.</p>
+          
+          <h6>Technologies :</h6>
+          <ul>
+            <li>HTML5 / CSS3</li>
+            <li>Bootstrap 5</li>
+            <li>JavaScript (Gestion du panier dynamique)</li>
+          </ul>
+
+          <h6>Fonctionnalités :</h6>
+          <ul>
+            <li>Galerie filtrable de produits.</li>
+            <li>Panier fonctionnel (stockage local).</li>
+            <li>Design totalement responsive.</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+           <a href="https://github.com/Estebanbrrr/NFT_Universe" target="_blank" class="btn btn-dark">Voir le code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalExp1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Stage Développeur Web - Médiamag</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Contexte :</strong> Stage de fin de 2ème année de BUT.</p>
+          <h6>Missions :</h6>
+          <ul>
+            <li>Analyse des besoins du client pour la refonte de leur outil interne.</li>
+            <li>Développement Backend avec Java Play Framework.</li>
+            <li>Gestion de la persistance des données avec Ebean ORM.</li>
+            <li>Création des vues frontend (HTML/CSS/JS).</li>
+          </ul>
+          <h6>Apports :</h6>
+          <p>J'ai appris à travailler sur une base de code existante et à respecter des contraintes professionnelles strictes (délais, qualité du code).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalExp2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Employé Polyvalent - Lidl</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Contexte :</strong> Job étudiant en parallèle des études (CDI 10h).</p>
+          <h6>Missions :</h6>
+          <ul>
+            <li>Gestion de la caisse et relation client.</li>
+            <li>Mise en rayon et logistique rapide.</li>
+          </ul>
+          <h6>Soft Skills développés :</h6>
+          <p>Ce poste m'a appris la gestion du stress, la rigueur, la ponctualité et le travail en équipe dans un environnement très rythmé.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+</html>

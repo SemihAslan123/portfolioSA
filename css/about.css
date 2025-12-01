@@ -110,3 +110,87 @@
   .skills .row + h4 {
     margin-top: 3rem;
   }
+
+  /* ===== ABOUT: SECTION CV (Layout style croquis) ===== */
+.cv-section {
+  position: relative;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.cv-visual-container {
+  position: relative;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cv-card-back {
+  position: absolute;
+  width: 200px;
+  height: 280px;
+  border: 3px solid #D6955B;
+  border-radius: 10px;
+  transform: rotate(-10deg) translate(-20px, -10px);
+  z-index: 1;
+}
+
+.cv-card-front {
+  position: relative;
+  width: 200px;
+  height: 280px;
+  background-color: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transform: rotate(5deg);
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.cv-card-front:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.cv-mini-img {
+  width: 80%;
+  height: auto;
+  border: 1px solid #eee;
+  margin-bottom: 10px;
+}
+
+/* ===== ABOUT: SECTION VEILLE (Layout style croquis) ===== */
+.veille-section {
+  padding: 80px 0;
+}
+
+.veille-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+  border-left: 5px solid #226D68;
+  transition: transform 0.3s;
+}
+
+.veille-card:hover {
+  transform: translateX(10px);
+}
+
+.veille-card h6 {
+  color: #18534F;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.veille-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}

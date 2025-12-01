@@ -56,3 +56,38 @@ body {
     color: #18534F;
   }
   
+  /* ===== MODALS ===== */
+.modal-header {
+  background-color: #18534F;
+  color: #ECF8F6;
+}
+.modal-title {
+  font-weight: 700;
+}
+.btn-close {
+  filter: invert(1);
+}
+.modal-body h6 {
+  color: #D6955B;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+/* ===== PAGE COMPETENCES ===== */
+.soft-skill-item {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  height: 100%;
+  border-top: 4px solid #D6955B;
+}
+
+/* ===== NAVBAR UPDATE ===== */
+/* Assure-toi que la navbar gère bien 6 liens sans casser sur petit écran */
+@media (max-width: 991px) {
+  .navbar-collapse {
+      background-color: #18534F;
+      padding: 20px;
+  }
+}
