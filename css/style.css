@@ -91,3 +91,145 @@ body {
       padding: 20px;
   }
 }
+
+
+/* ======== FOOTER ======== */
+.modern-footer {
+  background-color: #18534F;
+  color: #ECF8F6;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Signature Géante */
+.footer-signature {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 13vw; 
+  line-height: 0.8;
+  margin-bottom: 0;
+  color: #FEEAA1;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  opacity: 0.9;
+  transition: all 0.5s ease;
+  cursor: default;
+  user-select: none;
+}
+
+.footer-signature:hover {
+  color: transparent;
+  -webkit-text-stroke: 2px #D6955B;
+  transform: scale(1.02);
+  opacity: 1;
+}
+
+.footer-divider {
+  border-color: #D6955B;
+  opacity: 0.3;
+  margin-top: 20px;
+}
+
+/* --- NOUVEAU : BOUTON CONTACT FOOTER --- */
+.btn-footer-contact {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 30px;
+  border: 1px solid #FEEAA1; /* Bordure jaune pâle */
+  border-radius: 50px; /* Forme de pilule */
+  color: #FEEAA1;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  overflow: hidden; /* Important pour l'effet de remplissage */
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+/* L'animation de fond (slide) */
+.btn-footer-contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #FEEAA1;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1); /* Animation fluide */
+  z-index: -1;
+}
+
+/* État au survol */
+.btn-footer-contact:hover {
+  color: #18534F; /* Le texte devient vert foncé pour le contraste */
+  padding-right: 40px; /* Léger allongement pour laisser place à la flèche */
+}
+
+.btn-footer-contact:hover::before {
+  width: 100%; /* Le fond se remplit */
+}
+
+/* Animation de la flèche */
+.btn-footer-contact i {
+  transition: transform 0.3s ease;
+}
+
+.btn-footer-contact:hover i {
+  transform: translateX(5px);
+}
+
+/* --- FIN BOUTON --- */
+
+/* Icones Réseaux */
+.footer-social {
+  color: #ECF8F6;
+  font-size: 1.5rem;
+  transition: transform 0.3s, color 0.3s;
+  display: inline-block;
+}
+
+.footer-social:hover {
+  color: #FEEAA1;
+  transform: translateY(-3px);
+}
+
+/* Bouton Scroll Top */
+.btn-scroll-top {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #D6955B;
+  border-radius: 50%;
+  color: #D6955B;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-scroll-top:hover {
+  background-color: #D6955B;
+  color: #18534F;
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .footer-signature {
+      font-size: 18vw;
+      margin-bottom: 20px;
+  }
+  .btn-scroll-top {
+      display: none;
+  }
+  /* Centrer le bouton sur mobile */
+  .btn-footer-contact {
+      width: 100%;
+      justify-content: center;
+  }
+}
